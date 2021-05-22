@@ -1,0 +1,23 @@
+#pragma kernel VoxelizeMesh
+
+RWStructuredBuffer<float4> _VoxelGridPoints;
+
+float4 _BoundsMin;
+
+float _CellHalfSize;
+int _GridWidth;
+int _GridHeight;
+int _GridDepth;
+
+[numthreads(4,4,4)]
+void VoxelizeMesh(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= _GridWidth || id.y >= _GridHeight || id.z >= _GridDepth) return;
+    
+    float cellSize = _CellHalfSize * 2.0;
+
+    _VoxelGridPoints[id.x + _GridWidth * (id.y + _GridHeight * id.z)] = float4(
+        _BoundsMin.x + id.x * cellSize,
+        _BoundsMin.y + id.y * cellSize,
+        _BoundsMin.z + id.z * cellSize, 1.0);
+}
