@@ -363,10 +363,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _meshFilter: {fileID: 1408160381}
   _meshCollider: {fileID: 1408160380}
-  _halfSize: 0.025
+  _halfSize: 0.05
   _boundsMin: {x: -1.3671875, y: -0.98437506, z: -0.8515625}
   _gridPointMaterial: {fileID: 2100000, guid: d16cf016e0a747441b046cc8e8d08c1e, type: 2}
-  _gridPointCount: 77000
+  _gridPointCount: 10080
   _voxelizeComputeShader: {fileID: 7200000, guid: 4b2486b15d1ffb6428efd3720e210b76, type: 3}
   _drawDebug: 1
 --- !u!64 &1408160380
