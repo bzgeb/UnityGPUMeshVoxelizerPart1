@@ -367,7 +367,6 @@ MonoBehaviour:
   _boundsMin: {x: -1.3671875, y: -0.98437506, z: -0.8515625}
   _gridPointMaterial: {fileID: 2100000, guid: d16cf016e0a747441b046cc8e8d08c1e, type: 2}
   _gridPointCount: 77000
-  _triangleMaterial: {fileID: 2100000, guid: 0690570e4c744498f8c0a35e317ccd92, type: 2}
   _voxelizeComputeShader: {fileID: 7200000, guid: 4b2486b15d1ffb6428efd3720e210b76, type: 3}
   _drawDebug: 1
 --- !u!64 &1408160380
